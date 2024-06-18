@@ -1,0 +1,1954 @@
+
+»\
+	cocoapods
+ArcGIS
+)AGSHistogramEqualizationStretchParameters
+	Companion
+-AGSHistogramEqualizationStretchParametersMeta
+kotlinx
+cinterop
+ObjCClassOf
+AGSStretchParameters
+kotlin
+
+commonizer
+ObjCCallable
+ObjCConstructor
+initSelector
+init
+
+designated
+
+ObjCMethod
+encoding
+@16@0:8
+selector
+isStret
+
+Deprecated
+level
+DeprecationLevel
+ERROR
+message
+Use constructor instead
+replaceWith
+ReplaceWith
+imports
+
+expression
++AGSHistogramEqualizationStretchParameters()
+internal
+CCall
+ConsumesReceiver
+ReturnsRetained
+ExternalObjCClass
+ExperimentalForeignApi
+AGSCancelableProtocolMeta
+platform
+darwin
+NSObjectProtocolMeta
+AGSOfflineMapSyncResult
+AGSOfflineMapSyncResultMeta
+	AGSObject
+AGSOfflineMapSyncResult()
+collections
+Map
+Any
+layerResults
+tableResults
+Boolean
+B16@0:8
+	hasErrors
+ isMobileMapPackageReopenRequired
+mobileMapPackageReopenRequired
+AGSFenceParameters
+AGSFenceParametersMeta
+AGSFenceParameters()
+Double
+d16@0:8
+bufferDistance
+AGSSolidStrokeSymbolLayerMeta
+AGSStrokeSymbolLayerMeta
+CoreGraphics
+CGFloat
+width
+UIKit
+UIColor
+color
+AGSSolidStrokeSymbolLayer
+@32@0:8d16@24
+&solidStrokeSymbolLayerWithWidth:color:
+solidStrokeSymbolLayerWithWidth
+List
+geometricEffects
+Long
+AGSStrokeSymbolLayerLineStyle3D
+lineStyle3D
+@48@0:8d16@24@32q40
+CsolidStrokeSymbolLayerWithWidth:color:geometricEffects:lineStyle3D:
+new
+alloc
+)Use constructor or factory method instead
+@40@0:8d16@24@32
+7solidStrokeSymbolLayerWithWidth:color:geometricEffects:
+CPointer
+cnames
+structs
+_NSZone
+zone
+@24@0:8^{_NSZone=}16
+allocWithZone:
+allocWithZone
+AGSOGCFeatureCollectionTable
+ AGSOGCFeatureCollectionTableMeta
+AGSFeatureTable
+AGSRemoteResourceProtocol
+AGSOGCFeatureCollectionInfo
+featureCollectionInfo
+initWithFeatureCollectionInfo:
+
+Foundation
+NSURL
+uRL
+String
+collectionID
+initWithURL:collectionID:
+
+@24@0:8@16
+3AGSOGCFeatureCollectionTable(featureCollectionInfo)
+initWithFeatureCollectionInfo
+	ObjCClass
+#16@0:8
+class
+CPointed
+COpaquePointer
+	aSelector
+
+withObject
+_withObject
+@40@0:8:16@24@32
+&performSelector:withObject:withObject:
+performSelector
+isProxy
+AGSRequestConfiguration
+requestConfiguration
+Unit
+
+v24@0:8@16
+setRequestConfiguration:
+setRequestConfiguration
+description
+URL
+ULong
+
+NSUInteger
+Q16@0:8
+hash
+aClass
+
+B24@0:8#16
+isKindOfClass:
+isKindOfClass
+	objcnames
+classes
+Protocol
+	aProtocol
+
+B24@0:8@16
+conformsToProtocol:
+conformsToProtocol
+AGSFeatureRequestMode
+featureRequestMode
+
+v24@0:8q16
+setFeatureRequestMode:
+setFeatureRequestMode
+AGSCredential
+
+credential
+setCredential:
+setCredential
+@32@0:8@16@24
+/AGSOGCFeatureCollectionTable(URL, collectionID)
+initWithURL
+q16@0:8
+AGSOGCFeatureCollectionTable()
+
+@24@0:8:16
+performSelector:
+debugDescription
+
+superclass
+isMemberOfClass:
+isMemberOfClass
+AGSQueryParameters
+
+parameters
+
+clearCache
+	outfields
+	Function2
+AGSFeatureQueryResult
+NSError
+
+completion
+AGSCancelableProtocol
+@44@0:8@16B24@28@?36
+BpopulateFromServiceWithParameters:clearCache:outfields:completion:
+!populateFromServiceWithParameters
+
+B24@0:8:16
+respondsToSelector:
+respondsToSelector
+object
+isEqual:
+isEqual
+@32@0:8:16@24
+performSelector:withObject:
+AGSFillSymbolLayer
+AGSFillSymbolLayerMeta
+AGSSymbolLayer
+AGSFillSymbolLayer()
+AGSAnnotationSublayer
+AGSAnnotationSublayerMeta
+AGSLayerContentProtocol
+maxScale
+	NSInteger
+
+sublayerID
+minScale
+showInLegend
+
+v20@0:8B16
+setShowInLegend:
+setShowInLegend
+scaleSymbols
+name
+definitionExpression
+canChangeVisibility
+AGSAnnotationSublayer()
+Float
+f16@0:8
+opacity
+	Function0
+@?16@0:8
+subLayerContentsChangedHandler
+@24@0:8@?16
+fetchLegendInfosWithCompletion:
+fetchLegendInfosWithCompletion
+v24@0:8@?16
+"setSubLayerContentsChangedHandler:
+!setSubLayerContentsChangedHandler
+scale
+
+B24@0:8d16
+isVisibleAtScale:
+isVisibleAtScale
+visible
+setVisible:
+
+setVisible
+subLayerContents
+	isVisible
+AGSGeoprocessingParameters
+AGSGeoprocessingParametersMeta
+AGSGeoprocessingExecutionType
+executionType
+initWithExecutionType:
+
+@24@0:8q16
+)AGSGeoprocessingParameters(executionType)
+initWithExecutionType
+AGSSpatialReference
+processSpatialReference
+AGSGeoprocessingParameters()
+returnM
+outputSpatialReference
+setOutputSpatialReference:
+setOutputSpatialReference
+returnZ
+setReturnZ:
+
+setReturnZ
+setReturnM:
+
+setReturnM
+setProcessSpatialReference:
+setProcessSpatialReference
+inputs
+
+setInputs:
+	setInputs
+AGSTrackingDistance
+AGSTrackingDistanceMeta
+AGSTrackingDistance()
+AGSLinearUnit
+displayTextUnits
+distance
+displayText
+AGSObjectMeta
+AGSLayerContentProtocolMeta
+AGSLocalFeatureEditMeta
+AGSLocalFeatureEdit
+AGSDimensionLayer
+AGSDimensionLayerMeta
+AGSLayer
+AGSItem
+item
+serviceLayerID
+initWithItem:serviceLayerID:
+initWithURL:
+AGSArcGISFeatureTable
+featureTable
+initWithFeatureTable:
+features
+selectFeatures:
+selectFeatures
+AGSSelectionMode
+mode
+@40@0:8@16q24@?32
+-selectFeaturesWithParameters:mode:completion:
+selectFeaturesWithParameters
+v16@0:8
+clearSelection
+
+AGSFeature
+feature
+v28@0:8@16B24
+%setFeatureVisibleWithFeature:visible:
+setFeatureVisibleWithFeature
+resetFeaturesVisible
+unselectFeature:
+unselectFeature
+unselectFeatures:
+unselectFeatures
+AGSLabelBarrierWeight
+barrierWeight
+referenceScale
+'setFeaturesVisibleWithFeatures:visible:
+setFeaturesVisibleWithFeatures
+AGSDimensionLayer()
+setDefinitionExpression:
+setDefinitionExpression
+AGSDimensionLayer(featureTable)
+initWithFeatureTable
+selectFeature:
+selectFeature
+@32@0:8@16q24
+'AGSDimensionLayer(item, serviceLayerID)
+initWithItem
+selectedFeaturesWithCompletion:
+selectedFeaturesWithCompletion
+setBarrierWeight:
+setBarrierWeight
+AGSDimensionLayer(URL)
+AGSGeoprocessingRaster
+AGSGeoprocessingRasterMeta
+AGSGeoprocessingDataFile
+uploadID
+initWithUploadID:
+inputFileURL
+initWithInputFileURL:
+format
+initWithURL:format:
+#AGSGeoprocessingRaster(URL, format)
+AGSGeoprocessingRaster()
+$AGSGeoprocessingRaster(inputFileURL)
+initWithInputFileURL
+ AGSGeoprocessingRaster(uploadID)
+initWithUploadID
+
+setFormat:
+	setFormat
+AGSGeoprocessingRaster(URL)
+AGSUtilityAssetGroupMeta
+AGSUtilityAssetGroup
+ AGSRelatedFeatureQueryResultMeta
+AGSFeatureSetProtocolMeta
+AGSRelatedFeatureQueryResult
+AGSUtilityTraceResultMeta
+AGSUtilityTraceResult
+(AGSLocationChangeHandlerDelegateProtocol
+NSObjectProtocol
+AGSLocationDataSource
+locationDataSource
+AGSLocation
+locationDidChange
+v32@0:8@16@24
+%locationDataSource:locationDidChange:
+headingDidChange
+v32@0:8@16d24
+$locationDataSource:headingDidChange:
+AGSLocationDataSourceStatus
+statusDidChange
+v32@0:8@16q24
+#locationDataSource:statusDidChange:
+AGSShapefileFeatureTableMeta
+AGSFeatureTableMeta
+fileURL
+AGSShapefileFeatureTable
+!shapefileFeatureTableWithFileURL:
+ shapefileFeatureTableWithFileURL
+shapefileFeatureTableWithName:
+shapefileFeatureTableWithName
+AGSRequestConfigurationMeta
+NSObjectMeta
+NSCopyingProtocolMeta
+additionalUserAgentInfo
+additionalInfo
+setAdditionalUserAgentInfo:
+setAdditionalUserAgentInfo
+globalConfiguration
+setGlobalConfiguration:
+setGlobalConfiguration
+AGSOGCFeatureCollectionInfoMeta
+AGSOGCFeatureCollectionInfo()
+AGSEnvelope
+extent
+title
+collectionDescription
+AGSRasterFunctionArgumentsMeta
+AGSRasterFunctionArguments
+rasterFunctionArguments
+&AGSDownloadPreplannedOfflineMapJobMeta
+
+AGSJobMeta
+"AGSDownloadPreplannedOfflineMapJob
+AGSField
+AGSFieldMeta
+AGSJSONSerializableProtocol
+AGSFieldType
+	fieldType
+alias
+length
+	AGSDomain
+domain
+editable
+	allowNull
+>initWithFieldType:name:alias:length:domain:editable:allowNull:
+
+isEditable
+unknownJSON
+@64@0:8q16@24@32q40@48B56B60
+EAGSField(fieldType, name, alias, length, domain, editable, allowNull)
+initWithFieldType
+type
+
+AGSField()
+unsupportedJSON
+ObjCObjectVar
+error
+@24@0:8^@16
+toJSON:
+toJSON
+#AGSTransportationNetworkDatasetMeta
+!AGSGeodatabaseDatasetProtocolMeta
+AGSTransportationNetworkDataset
+AGSTimeReference
+AGSTimeReferenceMeta
+AGSTimeReference()
+timeZoneName
+
+NSTimeZone
+timeZone
+respectsDaylightSavings
+AGSLabelDefinitionMeta
+AGSJSONSerializableProtocolMeta
+AGSLabelDefinition
+
+JSONObject
+@32@0:8@16^@24
+fromJSON:error:
+fromJSON
+AGSLabelExpression
+labelExpression
+AGSTextSymbol
+
+textSymbol
+.labelDefinitionWithLabelExpression:textSymbol:
+"labelDefinitionWithLabelExpression
+AGSStatisticDefinitionMeta
+onFieldName
+AGSStatisticType
+statisticType
+outputAlias
+AGSStatisticDefinition
+@40@0:8@16q24@32
+=statisticDefinitionWithOnFieldName:statisticType:outputAlias:
+"statisticDefinitionWithOnFieldName
+AGSVectorTileStyle
+AGSVectorTileStyleMeta
+AGSVectorTileStyle()
+version
+	sourceURL
+AGSMediaPopupElement
+AGSMediaPopupElementMeta
+AGSPopupElement
+media
+initWithMedia:
+AGSMediaPopupElement()
+AGSMediaPopupElement(media)
+initWithMedia
+	setTitle:
+setTitle
+elementDescription
+setElementDescription:
+setElementDescription
+AGSMultipartBuilderMeta
+AGSGeometryBuilderMeta
+AGSMultipartBuilder
+AGSSpatialReferenceMeta
+NSCopyingProtocol
+wKText
+initWithWKText:
+wKID
+verticalWKID
+initWithWKID:verticalWKID:
+initWithWKID:
+NSZone
+copyWithZone:
+copyWithZone
+isGeographic
+other
+isEqualToSpatialReference:
+isEqualToSpatialReference
+isProjected
+AGSUnit
+unit
+
+isPannable
+WKID
+@32@0:8q16q24
+'AGSSpatialReference(WKID, verticalWKID)
+initWithWKID
+hasVertical
+baseGeographic
+verticalUnit
+AGSSpatialReference(WKID)
+WKText
+AGSSpatialReference()
+AGSPoint
+point
+
+d24@0:8@16
+convergenceAngleWithPoint:
+convergenceAngleWithPoint
+AGSSpatialReference(WKText)
+initWithWKText
+pannable
+
+geographic
+	projected
+AGSOGCFeatureServiceInfo
+AGSOGCFeatureServiceInfoMeta
+AGSOGCFeatureServiceInfo()
+featureCollectionInfos
+serviceDescription
+#AGSRouteTrackerDelegateProtocolMeta
+AGSPortalFolderMeta
+AGSPortalFolder
+AGSViewLabelProperties
+AGSViewLabelPropertiesMeta
+animationEnabled
+labelingEnabled
+)initWithAnimationEnabled:labelingEnabled:
+AGSViewLabelProperties()
+@24@0:8B16B20
+9AGSViewLabelProperties(animationEnabled, labelingEnabled)
+initWithAnimationEnabled
+isAnimationEnabled
+isLabelingEnabled
+setLabelingEnabled:
+setLabelingEnabled
+setAnimationEnabled:
+setAnimationEnabled
+AGSSyncLayerOptionMeta
+AGSSyncLayerOption
+syncLayerOption
+layerID
+AGSSyncDirection
+syncDirection
+)syncLayerOptionWithLayerID:syncDirection:
+syncLayerOptionWithLayerID
+syncLayerOptionWithLayerID:
+AGSGeometryEngine
+AGSGeometryEngineMeta
+AGSGeometryEngine()
+AGSDictionarySymbolStyleMeta
+AGSSymbolStyleMeta
+AGSDictionarySymbolStyle
+symbolStyleWithURL:
+symbolStyleWithURL
+symbolStyleWithName:
+symbolStyleWithName
+AGSPortalItem
+
+portalItem
+symbolStyleWithPortalItem:
+symbolStyleWithPortalItem
+dictionarySymbolStyleWithName:
+dictionarySymbolStyleWithName
+dictionarySymbolStyleWithURL:
+dictionarySymbolStyleWithURL
+	styleName
+	AGSPortal
+portal
+ symbolStyleWithStyleName:portal:
+symbolStyleWithStyleName
+$dictionarySymbolStyleWithPortalItem:
+#dictionarySymbolStyleWithPortalItem
+AGSGeoprocessingStringMeta
+AGSGeoprocessingParameterMeta
+AGSGeoprocessingString
+geoprocessingParameter
+value
+geoprocessingStringWithValue:
+geoprocessingStringWithValue
+geoprocessingString
+AGSImageFrameMeta
+AGSLoadableBaseMeta
+AGSRemoteResourceProtocolMeta
+AGSImageFrame
+imageFrameWithURL:
+imageFrameWithURL
+UIImage
+image
+imageFrameWithImage:extent:
+imageFrameWithImage
+imageFrameWithURL:extent:
+
+AGSPolygon
+quadrilateral
+ imageFrameWithURL:quadrilateral:
+"imageFrameWithImage:quadrilateral:
+AGSUtilityTraceFunctionOutput
+!AGSUtilityTraceFunctionOutputMeta
+result
+AGSUtilityTraceFunctionOutput()
+AGSUtilityTraceFunction
+function
+AGSENCFeature
+AGSENCFeatureMeta
+AGSGeoElementProtocol
+AGSENCFeature()
+featureDescription
+acronym
+NSMutableDictionary
+
+attributes
+AGSGeometry
+geometry
+attributeDescriptionForAcronym:
+attributeDescriptionForAcronym
+setGeometry:
+setGeometry∫
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+	
+	
+
+
+ 
+ 
+ 
+	 
+	 
+	 
+ 
+! 
+" 
+# 
+$ 
+% 
+& 
+'
+(
+) 
+* 
+ 
++ 
+, 
+	.
+/ 
+	0 
+	3 
+8 
+# 
+9 
+	; 
+> 
+? 
+@
+)A 
+C
++D 
+F 
+J 
+	L 
+M 
+V 
+W
+2X
+3Y 
+^ 
+5 
+_ 
+` 
+a 
+b 
+e
+;f 
+	h 
+n 
+q 
+r 
+z 
+	| 
+	Ç 
+É 
+ä
+Eã
+Få 
+ë 
+ñ 
+• 
+	© 
+™ 
+;´ 
+≠ 
+π 
+O 
+∫ 
+ª 
+Ω 
+S 
+æ 
+ø 
+¡ 
+	Õ 
+	– 
+‚ 
+Z 
+„ 
+‰ 
+Í 
+˚ 
+_ 
+¸ 
+˛ 
+Ç 
+É 
+Ñ 
+Ö 
+Ü 
+g 
+á 
+à 
+â 
+é 
+î 
+õ 
+• 
+π 
+p 
+∫ 
+ª 
+À 
+Ã 
+Õ 
+Œ 
+œ 
+– 
+— 
+“ 
+” 
+‘ 
+÷ 
+› 
+· 
+‚ 
+‰ 
+È 
+Í 
+;Î 
+: 
+Û 
+ı 
+˘ 
+˙ 
+¸ 
+˝ 
+˛ 
+ˇ 
+é 
+Ä 
+Å 
+Ç 
+Ü 
+ì 
+ò 
+ô 
+ö 
+õ 
+ò 
+ú 
+;ü 
+¢ 
+£ 
+§ 
+© 
+´ 
+Ø 
+± 
+¥ 
+∏ 
+§ 
+π 
+Ω 
+ß 
+æ 
+ø 
+  
+À 
+Ã 
+^ 
+Õ 
+;Œ 
+;’ 
+› 
+Í 
+Ù 
+¥ 
+ı 
+˘ 
+˙ 
+˚ 
+¸ 
+∫ 
+˝ 
+ã 
+å 
+è 
+î 
+¿ 
+ï 
+ó 
+ò 
+ô 
+û 
+ß 
+≠ 
+Æ 
+Ø 
+µ 
+∂ 
+∑ 
+∏ 
++ª 
+¿ 
+ƒ 
+— 
+≈ 
+» 
+  
+’ 
+À 
+Ã 
+;– 
+“ "Ü#20200"≥ó  20:B “
+“
+(Jw0HóÄ“
+“
+ (( “
+6
+
+08(B(“
+“
+“
+“
+"Á 20“
+"Ü#20200"Îó  20:B “
+“
+(Jw0HóÄ“
+“
+ (( “
+6
+
+08(B(-“
+“
+J>10!0 HóÄ“
+“
+ ((1 J>20!0 HóÄ“
+“
+ ((2 J250"HóÄ“
+“
+ (4(5 J260"HóÄ“
+“
+ (4(6 R10!0 8XÜÑR70"8XÜÑR50"8XÜÑR20!0 8XÜÑ“
+“
+"Ü#$20%20#0"ıó # 20:B “
+“
+(Jw0#HóÄ“
+“
+ (( “
+6
+
+08(B(:“
+“
+J2=0&HóÄ“
+“
+ (<(= R=0&8XÜÑ“
+“
+"„ó '20(BJFI0-2
+B0&j`*2E0,HóÄ“
+“
+ (G(H J^I0-2
+B0&j`*2E0,2
+K0.2
+N0/j`0HóÄ“
+“
+ (O(P J4Q0-HóÄ“
+“
+ ((Q JCR0-HóÄ“
+“
+ ((R “
+(SJRI0-2
+B0&j`*2E0,2
+K0.HóÄ“
+“
+ (T(U JS]0-2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Ü#62072050"«ó 5 208209:B(c0:“
+“
+(dB0g0<i0=“
+“
+(jB “
+“
+(J}m052c0:HóÄ“
+“
+ (k(d “
+6
+
+08(B(l“
+“
+J4p0>HóÄ“
+“
+ (o(p J`x0!2s0?01j`@2t0!2u0!HóÄ“
+“
+ (v(w J2y0"HóÄ“
+“
+ (4(y J<0B2{0AHóÄ“
+“
+ (}(~ J6Ä0=HóÄ“
+“
+!(	(Ä J6Å0<HóÄ“
+“
+!(	(Å J9Ö0Cj`DHóÄ“
+“
+"	(Ñ	(Ö J@â0"2	Ü0>HóÄ“
+“
+"	(á	(à J@ê0"2	ç0GHóÄ“
+“
+"	(é	(è JBï0B2í0/j`HHóÄ“
+“
+"	(ì	(î J?ô0B2	ó0IHóÄ“
+“
+!(}	(ò Jâú052Å0<2i0=HóÄ“
+“
+!	(ö(j “
+7
+
+08(B	(õ“
+“
+J4c0:HóÄ“
+“
+ ((c J9í0/j`HHóÄ“
+“
+"	(ù	(í Jx05HóÄ“
+“
+ (( “
+7
+
+08(B	(û“
+“
+JNx0!2s0?01j`@HóÄ“
+“
+"	(ü	(† J6°0=HóÄ“
+“
+!(	(° J4{0AHóÄ“
+“
+ (({ J6¢0>HóÄ“
+“
+!(o	(¢ J@§0"2	Ü0>HóÄ“
+“
+"	(á	(£ Jw∞0N2	¶0J2ß0"2®0.2¨0L0M0B0KHóÄ“
+“
+"	(Æ	(Ø J6ó0IHóÄ“
+“
+!(	(ó JM≥0"2s0?01j`@HóÄ“
+“
+"	(±	(≤ J@∂0"2	¥0!HóÄ“
+“
+"	(é	(µ JXx0!2s0?01j`@2t0!HóÄ“
+“
+"	(∑	(∏ Rí0/j`H8@XÜéRc0:8XÜÑ“
+“
+"Ü#P20Q20O0"¥ó O 20R:B “
+“
+(Jx0OHóÄ“
+“
+ (( “
+7
+
+08(B	(º“
+“
+“
+“
+"Ü#T20U20S0"√ó S 2020V:B “
+“
+(J4p0>HóÄ“
+“
+ (o(p J4¿0&HóÄ“
+“
+!(<	(¿ J9¬0/j`WHóÄ“
+“
+"	(ù	(¬ J`x0!2s0?01j`@2t0!2u0!HóÄ“
+“
+ (v(w J2y0"HóÄ“
+“
+ (4(y J4√0&HóÄ“
+“
+!(<	(√ J6Ä0=HóÄ“
+“
+!(	(Ä J>«0B2ƒ0"HóÄ“
+“
+"	(≈	(∆ J9Ö0Cj`DHóÄ“
+“
+"	(Ñ	(Ö J@â0"2	Ü0>HóÄ“
+“
+"	(á	(à J4»0"HóÄ“
+“
+!(4	(» J@ê0"2	ç0GHóÄ“
+“
+"	(é	(è J4…0=HóÄ“
+“
+!(	(… J4 0=HóÄ“
+“
+!(	(  J4À0"HóÄ“
+“
+!(4	(À Jx0SHóÄ“
+“
+ (( “
+7
+
+08(B	(Ã“
+“
+JNx0!2s0?01j`@HóÄ“
+“
+"	(ü	(† J6°0=HóÄ“
+“
+!(	(° J6¢0>HóÄ“
+“
+!(o	(¢ JM≥0"2s0?01j`@HóÄ“
+“
+"	(±	(≤ J5œ0XHóÄ“
+“
+"	(Œ	(œ J@§0"2	Ü0>HóÄ“
+“
+"	(á	(£ J=“
+0B0YHóÄ“
+“
+"	(—	(“ JX’0N2!¨
+0.0M0B0KHóÄ“
+“
+"	(”	(‘ JFÿ0B2“
+0B0YHóÄ“
+“
+"	(÷	(◊ J4ƒ0"HóÄ“
+“
+!(4	(ƒ J>‹0"2Ÿ0&HóÄ“
+“
+"	(⁄	(€ J>ﬂ0B2›0"HóÄ“
+“
+"	(≈	(ﬁ J@∂0"2	¥0!HóÄ“
+“
+"	(é	(µ J8‡0.HóÄ“
+“
+!(	(‡ JXx0!2s0?01j`@2t0!HóÄ“
+“
+"	(∑	(∏ J4·0"HóÄ“
+“
+!(4	(· R¬0/j`W8XÜÑRœ0X8XÜÑR 0=8XÜÑR»0"8XÜÑR¿0&8XÜÑR√0&8XÜÑ“
+“
+"Ü#[20\20Z0"ã	ó Z 20:B “
+“
+(B.Â0/j`]“
+“
+	(ÊJÜÈ0Z2Â0/j`]HóÄ“
+“
+"	(Á	(Ê “
+7
+
+08(B	(Ë“
+“
+J6Î0^HóÄ“
+“
+!(	(Î J9Â0/j`]HóÄ“
+“
+"	(ù	(Â Jx0ZHóÄ“
+“
+ (( “
+7
+
+08(B	(Ï“
+“
+J4Ì0"HóÄ“
+“
+!(4	(Ì J?0B2	Ó0^HóÄ“
+“
+!(}	(Ô J6Ó0^HóÄ“
+“
+!(	(Ó J>Û0B2Ò0"HóÄ“
+“
+"	(≈	(Ú J4Ò0"HóÄ“
+“
+!(4	(Ò J>ı0B2Ì0"HóÄ“
+“
+"	(≈	(Ù J?˜0B2	Î0^HóÄ“
+“
+!(}	(ˆ J@¯0!0 HóÄ“
+“
+!(	(¯ JI˙0B2¯0!0 HóÄ“
+“
+!(}	(˘ RÓ0^8@XÜéR¯0!0 8@XÜéRÂ0/j`]8XÜÑRÎ0^8@XÜéRÒ0"8@XÜéRÌ0"8@XÜé“
+“
+"Ü#`20a20_0"Éó _ 20:B “
+“
+(Jx0_HóÄ“
+“
+ (( “
+7
+
+08(B	(˝“
+“
+J4ˇ0bHóÄ“
+“
+!(	(ˇ J4Ä0&HóÄ“
+“
+!(<	(Ä J4Å0=HóÄ“
+“
+!(	(Å RÄ0&8XÜÑRˇ0b8XÜÑRÅ0=8XÜÑ“
+“
+"Îó U20c20dBJ4Q0SHóÄ“
+“
+ ((Q JCR0SHóÄ“
+“
+ ((R “
+(SJS]0S2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Áó e20cBJ4Q0fHóÄ“
+“
+ ((Q JCR0fHóÄ“
+“
+ ((R “
+(SJS]0f2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Ü#h20i20g0"˜ó g 20j209:B7ä0kã0/j`W“
+“
+	(åB “
+“
+(B)g0<“
+“
+	(çB*è0l“
+“
+	(êJ4p0>HóÄ“
+“
+ (o(p JAì0B2ë0.HóÄ“
+“
+!(}	(í J6Ä0=HóÄ“
+“
+!(	(Ä J2y0"HóÄ“
+“
+ (4(y Jjò0N2¶0J2ï0/j`m2¨0L0M0B0KHóÄ“
+“
+"	(ñ	(ó J`x0!2s0?01j`@2t0!2u0!HóÄ“
+“
+ (v(w J5ö0BHóÄ“
+“
+"	(ô	(ö J<0B2{0AHóÄ“
+“
+ (}(~ JGü0B2ú0n2›0"HóÄ“
+“
+"	(ù	(û J5†0BHóÄ“
+“
+"	(ô	(† J=¢0B2ú0nHóÄ“
+“
+!(}	(° J6Å0<HóÄ“
+“
+!(	(Å J9Ö0Cj`DHóÄ“
+“
+"	(Ñ	(Ö J@â0"2	Ü0>HóÄ“
+“
+"	(á	(à J@ê0"2	ç0GHóÄ“
+“
+"	(é	(è JA§0B2ë0.HóÄ“
+“
+!(}	(£ J9¶0/j`oHóÄ“
+“
+"	(ù	(¶ J6è0lHóÄ“
+“
+!(	(è J?ô0B2	ó0IHóÄ“
+“
+!(}	(ò J4ß0&HóÄ“
+“
+!(<	(ß JK©0B2ë0.2›0"HóÄ“
+“
+"	(ù	(® J4 0=HóÄ“
+“
+!(	(  Jx0gHóÄ“
+“
+ (( “
+7
+
+08(B	(™“
+“
+JNx0!2s0?01j`@HóÄ“
+“
+"	(ü	(† J6°0=HóÄ“
+“
+!(	(° J9ã0/j`WHóÄ“
+“
+"	(ù	(ã J=¨0B2 0=HóÄ“
+“
+!(}	(´ J4{0AHóÄ“
+“
+ (({ J6¢0>HóÄ“
+“
+!(o	(¢ J@§0"2	Ü0>HóÄ“
+“
+"	(á	(£ JÅÆ0g2è0lHóÄ“
+“
+!(k	(ê “
+7
+
+08(B	(≠“
+“
+J=∞0B2ú0nHóÄ“
+“
+!(}	(Ø J6ó0IHóÄ“
+“
+!(	(ó JM≥0"2s0?01j`@HóÄ“
+“
+"	(±	(≤ J@∂0"2	¥0!HóÄ“
+“
+"	(é	(µ Jè≥0g2ä0k2ã0/j`WHóÄ“
+“
+"	(±	(å “
+7
+
+08(B	(≤“
+“
+JTµ0N2¨0L0M0B0KHóÄ“
+“
+"	(”	(¥ JXx0!2s0?01j`@2t0!HóÄ“
+“
+"	(∑	(∏ JB∑0B2¶0/j`oHóÄ“
+“
+"	(ì	(∂ JÅú0g2Å0<HóÄ“
+“
+!(k	(ç “
+7
+
+08(B	(∏“
+“
+Rã0/j`W8XÜÑR¶0/j`o8@XÜéRè0l8XÜÑRß0&8XÜÑR 0=8@XÜé“
+“
+"Ü#q20r20p0"ãó p 20s:B*º0=“
+“
+	(ΩB “
+“
+(B*æ0<“
+“
+	(øB2g0<¿0=“
+“
+	(¡B)g0<“
+“
+	(çJãú0p2Å0<2¿0=HóÄ“
+“
+"	(ö	(¡ “
+7
+
+08(B	(¬“
+“
+Jx0pHóÄ“
+“
+ (( “
+7
+
+08(B	(√“
+“
+JÅ≈0p2æ0<HóÄ“
+“
+!(k	(ø “
+7
+
+08(B	(ƒ“
+“
+JÅ«0p2º0=HóÄ“
+“
+!(k	(Ω “
+7
+
+08(B	(∆“
+“
+J=…0B2¿0=HóÄ“
+“
+!(}	(» J4¿0=HóÄ“
+“
+!(	(¿ JÅú0p2Å0<HóÄ“
+“
+!(k	(ç “
+7
+
+08(B	( “
+“
+R¿0=8@XÜé“
+“
+"Áó t20cBJ4Q0uHóÄ“
+“
+ ((Q JCR0uHóÄ“
+“
+ ((R “
+(SJS]0u2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Îó v20c20wBJ4Q0xHóÄ“
+“
+ ((Q JCR0xHóÄ“
+“
+ ((R “
+(SJS]0x2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Áó y20cBJ4Q0zHóÄ“
+“
+ ((Q JCR0zHóÄ“
+“
+ ((R “
+(SJS]0z2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"ÌÁ {20|JG’0B2’0}2◊0~HóÄ“
+“
+"	(ÿ	(Ÿ JG’0B2’0}2⁄0&HóÄ“
+“
+"	(€	(‹ JK’0B2’0}2ﬁ0/j`HóÄ“
+“
+"	(ﬂ	(‡ “
+"Ïó Ä20ÅBJ>Ê0Ç2„0<HóÄ“
+“
+!(k	(Â J5Q0ÇHóÄ“
+“
+ ((Q JDR0ÇHóÄ“
+“
+ ((R “
+(SJ>Ë0Ç2…0=HóÄ“
+“
+!(k	(Á JT]0Ç2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"⁄ó É20Ñ20ÖBJ4Q0AHóÄ“
+“
+ ((Q J4Ï0=HóÄ“
+“
+!(	(Ï J?Ô0B2	Ì0=HóÄ“
+“
+!(}	(Ó JCR0AHóÄ“
+“
+ ((R “
+(SJ=Ú0B20AHóÄ“
+“
+!(}	(Ò J40AHóÄ“
+“
+!(	( JS]0A2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Ü#Ü20á20:0"Àó : 20:B “
+“
+(Jx0:HóÄ“
+“
+ (( “
+7
+
+08(B	(Ù“
+“
+J2i0=HóÄ“
+“
+ ((i J7ˆ0àHóÄ“
+“
+!(	(ˆ J4˜0=HóÄ“
+“
+!(	(˜ J4¯0=HóÄ“
+“
+!(	(¯ Rˆ0à8XÜÑR¯0=8XÜÑR˜0=8XÜÑRi0=8XÜÑ“
+“
+"¢ó â20cBJ5˚0äHóÄ“
+“
+!(	(˚ J5Q0äHóÄ“
+“
+ ((Q JDR0äHóÄ“
+“
+ ((R “
+(SJT]0ä2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Ïó ã20åBJ5Q0çHóÄ“
+“
+ ((Q JDR0çHóÄ“
+“
+ ((R “
+(SJT]0ç2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Ü#è20ê2	0é0"˘ó é 2020ë:BlÉ0/j`í…0=Ñ0=Ö0/j`W
+á0ìà0"â0"“
+“
+	(äB “
+“
+(J4ã0"HóÄ“
+“
+!(4	(ã J4p0>HóÄ“
+“
+ (o(p J`x0!2s0?01j`@2t0!2u0!HóÄ“
+“
+ (v(w J2y0"HóÄ“
+“
+ (4(y J6Ä0=HóÄ“
+“
+!(	(Ä J9Ö0Cj`DHóÄ“
+“
+"	(Ñ	(Ö J@â0"2	Ü0>HóÄ“
+“
+"	(á	(à JBå0!0 HóÄ“
+“
+!(	(å J7á0ìHóÄ“
+“
+!(	(á J@ê0"2	ç0GHóÄ“
+“
+"	(é	(è J4Ñ0=HóÄ“
+“
+!(	(Ñ J4…0=HóÄ“
+“
+!(	(… J≈è0é2É0/j`í2…0=2Ñ0=2Ö0/j`W2
+á0ì2à0"2â0"HóÄ“
+“
+"	(ç	(ä “
+7
+
+08(B	(é“
+“
+J:ê0/j`íHóÄ“
+“
+"	(ù	(ê Jy0éHóÄ“
+“
+ (( “
+7
+
+08(B	(ë“
+“
+JNx0!2s0?01j`@HóÄ“
+“
+"	(ü	(† J6°0=HóÄ“
+“
+!(	(° J6¢0>HóÄ“
+“
+!(o	(¢ JBí0!0 HóÄ“
+“
+!(	(í J@§0"2	Ü0>HóÄ“
+“
+"	(á	(£ JQó0!2î0M0î01HóÄ“
+“
+"	(ï	(ñ JM≥0"2s0?01j`@HóÄ“
+“
+"	(±	(≤ J@∂0"2	¥0!HóÄ“
+“
+"	(é	(µ J4â0"HóÄ“
+“
+!(4	(â JXx0!2s0?01j`@2t0!HóÄ“
+“
+"	(∑	(∏ J9Ö0/j`WHóÄ“
+“
+"	(ù	(Ö Rá0ì8XÜÑRÖ0/j`W8XÜÑRà0"8XÜÑRÑ0=8XÜÑRê0/j`í8XÜÑRâ0"8XÜÑR…0=8XÜÑ“
+“
+"ó ï20c20ñBJ5Q0óHóÄ“
+“
+ ((Q JDR0óHóÄ“
+“
+ ((R “
+(SJT]0ó2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Ü#ô20ö2	0ò0"ãó ò 20:B “
+“
+(Jy0òHóÄ“
+“
+ (( “
+7
+
+08(B	(ù“
+“
+J4û0=HóÄ“
+“
+!(	(û J7†0õHóÄ“
+“
+!(	(† J4°0"HóÄ“
+“
+!(4	(° R†0õ8XÜÑR°0"8XÜÑRû0=8XÜÑ“
+“
+"õó ú20c20ùBJ5Q0ûHóÄ“
+“
+ ((Q JDR0ûHóÄ“
+“
+ ((R “
+(SJ[®0ë2•0!2î0M0î01HóÄ“
+“
+"	(¶	(ß JLÆ0û2™0ü2
+¨0†HóÄ“
+“
+"	(ö	(≠ JT]0û2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"≈ó °20cBJX∑0£2∞0=2≤0/j`¢2	≥0=HóÄ“
+“
+"	(µ	(∂ J5Q0£HóÄ“
+“
+ ((Q JDR0£HóÄ“
+“
+ ((R “
+(SJT]0£2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Ü#•20¶2	0§0"ƒó § 20:B “
+“
+(Jy0§HóÄ“
+“
+ (( “
+7
+
+08(B	(∫“
+“
+J4ª0=HóÄ“
+“
+!(	(ª J6º0<HóÄ“
+“
+!(	(º Rª0=8XÜÑRº0<8XÜÑ“
+“
+"Ü#®20©2	0ß0"…ó ß 20™:B “
+“
+(B.¿0.“
+“
+	(¡Jy0ßHóÄ“
+“
+ (( “
+7
+
+08(B	(¬“
+“
+JÜƒ0ß2¿0.HóÄ“
+“
+!(k	(¡ “
+7
+
+08(B	(√“
+“
+J=∆0B2˜0=HóÄ“
+“
+!(}	(≈ J8¿0.HóÄ“
+“
+!(	(¿ J4˜0=HóÄ“
+“
+!(	(˜ J=…0B2«0=HóÄ“
+“
+!(}	(» J4«0=HóÄ“
+“
+!(	(« R˜0=8@XÜéR¿0.8XÜÑR«0=8@XÜé“
+“
+"Ïó ´20¨BJ5Q0≠HóÄ“
+“
+ ((Q JDR0≠HóÄ“
+“
+ ((R “
+(SJT]0≠2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Ü#Æ20Ø20^0"™ó ^ 2020∞20ë:B*œ0=“
+“
+	(–B;—0/j`W“0/j`W“
+“
+	(”B.—0/j`W“
+“
+	(‘B “
+“
+(JN◊0!2Z	04j`±01HóÄ“
+“
+!([	(÷ “
+J4ÿ0"HóÄ“
+“
+!(4	(ÿ J>€0"2Ÿ0^HóÄ“
+“
+"	(é	(⁄ J4‹0"HóÄ“
+“
+!(4	(‹ J4p0>HóÄ“
+“
+ (o(p J2y0"HóÄ“
+“
+ (4(y J5ﬁ0≤HóÄ“
+“
+!(	(ﬁ J`x0!2s0?01j`@2t0!2u0!HóÄ“
+“
+ (v(w J6Ä0=HóÄ“
+“
+!(	(Ä J4ﬂ0"HóÄ“
+“
+!(4	(ﬂ J9Ö0Cj`DHóÄ“
+“
+"	(Ñ	(Ö J@â0"2	Ü0>HóÄ“
+“
+"	(á	(à JBå0!0 HóÄ“
+“
+!(	(å Jï„0^2‡0/j`W2“0/j`WHóÄ“
+“
+"	(·	(” “
+7
+
+08(B	(‚“
+“
+J@ê0"2	ç0GHóÄ“
+“
+"	(é	(è J9“0/j`WHóÄ“
+“
+"	(ù	(“ J4‰0"HóÄ“
+“
+!(4	(‰ J6Â0^HóÄ“
+“
+!(	(Â J6Ê0bHóÄ“
+“
+!(	(Ê J9‡0/j`WHóÄ“
+“
+"	(ù	(‡ Jà„0^2‡0/j`WHóÄ“
+“
+"	(Á	(‘ “
+7
+
+08(B	(Á“
+“
+J4Ë0=HóÄ“
+“
+!(	(Ë Jx0^HóÄ“
+“
+ (( “
+7
+
+08(B	(È“
+“
+JNx0!2s0?01j`@HóÄ“
+“
+"	(ü	(† J6°0=HóÄ“
+“
+!(	(° J?Ó0&2Î0≥HóÄ“
+“
+"	(Ï	(Ì J6¢0>HóÄ“
+“
+!(o	(¢ J@§0"2	Ü0>HóÄ“
+“
+"	(á	(£ JBí0!0 HóÄ“
+“
+!(	(í JM≥0"2s0?01j`@HóÄ“
+“
+"	(±	(≤ JQó0!2î0M0î01HóÄ“
+“
+"	(ï	(ñ JÉ0^2Ë0=HóÄ“
+“
+!(k	(– “
+7
+
+08(B	(Ô“
+“
+J@∂0"2	¥0!HóÄ“
+“
+"	(é	(µ JXx0!2s0?01j`@2t0!HóÄ“
+“
+"	(∑	(∏ Rﬁ0≤8XÜÑRÒ0"8XÜÑR‰0"8XÜÑR‡0/j`W8XÜÑRÚ0"8XÜÑR“0/j`W8XÜÑRË0=8XÜÑRÂ0^8XÜÑRÛ0"8XÜÑRÊ0b8XÜÑ“
+“
+"Ü#µ20∂2	0¥0"çó ¥ 20:B “
+“
+(Jy0¥HóÄ“
+“
+ (( “
+7
+
+08(B	(ˆ“
+“
+J4˜0=HóÄ“
+“
+!(	(˜ J8˜0.HóÄ“
+“
+!(	(˜ J4¯0=HóÄ“
+“
+!(	(¯ R˜0.8XÜÑR˜0=8XÜÑR¯0=8XÜÑ“
+“
+"Á ∑20“
+"Ïó ∏20ÑBJ5Q0πHóÄ“
+“
+ ((Q JDR0πHóÄ“
+“
+ ((R “
+(SJT]0π2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Ü#ª20º2	0∫0"àó ∫ 20:B “
+“
+(B3˛0"ˇ0"“
+“
+	(ÄJy0∫HóÄ“
+“
+ (( “
+7
+
+08(B	(Å“
+“
+JåÑ0∫2˛0"2ˇ0"HóÄ“
+“
+"	(Ç	(Ä “
+7
+
+08(B	(É“
+“
+J4Ö0"HóÄ“
+“
+!(4	(Ö J4Ü0"HóÄ“
+“
+!(4	(Ü J>à0B2ˇ0"HóÄ“
+“
+"	(≈	(á J>ä0B2˛0"HóÄ“
+“
+"	(≈	(â Rˇ0"8@XÜéR˛0"8@XÜé“
+“
+"øó Ω20c20ÖBJ5ç0æHóÄ“
+“
+!(	(ç J5Q0æHóÄ“
+“
+ ((Q JDR0æHóÄ“
+“
+ ((R “
+(SJQí0æ2é0/j`W2ê0/j`øHóÄ“
+“
+"	(·	(ë JCí0æ2é0/j`WHóÄ“
+“
+"	(Á	(ì JT]0æ2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"Ü#¡20¬2	0¿0"∂ó ¿ 20:B “
+“
+(Jy0¿HóÄ“
+“
+ (( “
+7
+
+08(B	(ñ“
+“
+“
+“
+"ªó √20ƒBJ>õ0≈2Å0<HóÄ“
+“
+!(k	(ö J>ù0≈2…0=HóÄ“
+“
+!(k	(ú J?°0≈2ü0∆HóÄ“
+“
+!(k	(† J>£0≈2…0=HóÄ“
+“
+!(k	(¢ J5Q0≈HóÄ“
+“
+ ((Q J>•0≈2Å0<HóÄ“
+“
+!(k	(§ JDR0≈HóÄ“
+“
+ ((R “
+(SJK™0≈2¶0=2
+®0«HóÄ“
+“
+"	(ö	(© J?¨0≈2ü0∆HóÄ“
+“
+!(k	(´ JT]0≈2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"öó »20…BJ5∞0 HóÄ“
+“
+!(	(∞ J5Q0 HóÄ“
+“
+ ((Q JDR0 HóÄ“
+“
+ ((R “
+(SJ>≥0 2±0=HóÄ“
+“
+!(k	(≤ J5¥0 HóÄ“
+“
+!(	(¥ JT]0 2Z
+0401HóÄ“
+“
+ ([(\ “
+(S“
+“
+"ﬂó À20Ã20ÕBJ>∫0Œ2Å0<HóÄ“
+“
+!(k	(π J5Q0ŒHóÄ“
+“
+ ((Q JDR0ŒHóÄ“
+“
+ ((R “
+(SJJæ0Œ2º0œ2ˆ0àHóÄ“
+“
+"	(ö	(Ω JI∫0Œ2Å0<2ˆ0àHóÄ“
+“
+"	(ö	(ø JT]0Œ2Z
+0401HóÄ“
+“
+ ([(\ “
+(SJI∫0Œ2Å0<2¡0–HóÄ“
+“
+"	(ö	(¬ JJæ0Œ2º0œ2¡0–HóÄ“
+“
+"	(ö	(√ “
+“
+"Ü#“20”2	0—0"¬ó — 20:B “
+“
+(J4∆0!HóÄ“
+“
+!(	(∆ Jy0—HóÄ“
+“
+ (( “
+7
+
+08(B	(«“
+“
+J5…0‘HóÄ“
+“
+!(	(… R…0‘8XÜÑR∆0!8XÜÑ“
+“
+"Ü#÷20◊2	0’0"Êó ’ 2020ÿ:B “
+“
+(J6°0=HóÄ“
+“
+!(	(° JNx0!2s0?01j`@HóÄ“
+“
+"	(ü	(† Jy0’HóÄ“
+“
+ (( “
+7
+
+08(B	(Õ“
+“
+J4p0>HóÄ“
+“
+ (o(p J4Œ0=HóÄ“
+“
+!(	(Œ J4œ0=HóÄ“
+“
+!(	(œ J2y0"HóÄ“
+“
+ (4(y J`x0!2s0?01j`@2t0!2u0!HóÄ“
+“
+ (v(w J6¢0>HóÄ“
+“
+!(o	(¢ J6Ä0=HóÄ“
+“
+!(	(Ä J@§0"2	Ü0>HóÄ“
+“
+"	(á	(£ J9Ö0Cj`DHóÄ“
+“
+"	(Ñ	(Ö JM≥0"2s0?01j`@HóÄ“
+“
+"	(±	(≤ J@â0"2	Ü0>HóÄ“
+“
+"	(á	(à J@∂0"2	¥0!HóÄ“
+“
+"	(é	(µ J5—0ŸHóÄ“
+“
+!(	(— J7”0⁄HóÄ“
+“
+!(	(” J@ê0"2	ç0GHóÄ“
+“
+"	(é	(è J=’0=2œ0=HóÄ“
+“
+!(k	(‘ JXx0!2s0?01j`@2t0!HóÄ“
+“
+"	(∑	(∏ J@◊0B2
+”0⁄HóÄ“
+“
+!(}	(÷ Rœ0=8XÜÑRŒ0=8XÜÑ“
+“
+‡
+ Í
+cocoapods.ArcGISÚ
+b$#'65POTS[Z`_Uehgqptvy{ÄÉÜ:âãèéïôòú°•§®ß´Æ^µ¥∑∏ª∫Ω¡¿√»À“—÷’
