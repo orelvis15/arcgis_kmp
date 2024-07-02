@@ -29,10 +29,8 @@ kotlin {
     }
 
     cocoapods {
-        summary = "Some description for the Shared Module"
-        homepage = "Link to the Shared Module homepage"
-        version = "1.0"
-        ios.deploymentTarget = "16.0"
+        version = "0.1.0"
+        ios.deploymentTarget = "17.0"
         framework {
             baseName = "shared"
             isStatic = true
@@ -62,7 +60,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.orelvis.gismap"
+    namespace = "com.orelvis15.gismap"
     compileSdk = 34
     defaultConfig {
         minSdk = 24

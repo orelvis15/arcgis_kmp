@@ -1,4 +1,4 @@
-package com.orelvis.gismap
+package com.orelvis15.kmpgismap
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -8,13 +8,16 @@ import androidx.compose.ui.Modifier
 import cocoapods.ArcGIS.AGSPoint
 import kotlinx.cinterop.ExperimentalForeignApi
 
-actual class GisMap {
+actual class GisMap actual constructor(
+    private var onMapLoadSuccess: () -> Unit,
+    private var onMapLoadFailed: (Throwable) -> Unit
+) {
 
     lateinit var map: IOSMapView
 
     @Composable
-    actual fun KMPMapView(mapConfig: GisMapConfig, onClick: (lat: Double, lon: Double) -> Unit) {
-        map = IOSMapView(mapConfig, onClick)
+    actual fun MapView(mapConfig: GisMapConfig, onClick: (lat: Double, lon: Double) -> Unit) {
+        map = IOSMapView(mapConfig, onMapLoadSuccess, onMapLoadFailed, onClick)
 
         Column(
             modifier = Modifier.fillMaxSize(),

@@ -1,6 +1,7 @@
-package com.orelvis.gismap
+package com.orelvis15.kmpgismap
 
 import android.content.Context
+import android.content.res.Resources
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
 import androidx.compose.foundation.layout.fillMaxSize
@@ -31,6 +32,8 @@ import kotlinx.coroutines.launch
 class ComposeMapView(
     context: Context,
     private val mapConfig: GisMapConfig,
+    private val onMapLoadSuccess: () -> Unit = {},
+    private val onMapLoadFailed: (Throwable) -> Unit = {},
     val onClick: (lat: Double, lon: Double) -> Unit
 ) {
     private var mapView: MapView = MapView(context)
@@ -69,11 +72,15 @@ class ComposeMapView(
         )
 
         LaunchedEffect(Unit) {
-            launch {
-                mapView.onSingleTapConfirmed.collect {
-                    mapView.screenToLocation(it.screenCoordinate)
-                    onClick(it.mapPoint!!.y, it.mapPoint!!.x)
-                }
+
+            mapView.map?.load()?.fold(
+                onSuccess = { onMapLoadSuccess() },
+                onFailure = { onMapLoadFailed(Throwable()) }
+            )
+
+            mapView.onSingleTapConfirmed.collect {
+                mapView.screenToLocation(it.screenCoordinate)
+                onClick(it.mapPoint!!.y, it.mapPoint!!.x)
             }
         }
     }
@@ -94,7 +101,7 @@ class ComposeMapView(
 
         val image = BitmapFactory.decodeByteArray(pin, 0, pin.size)
 
-        val node = PictureMarkerSymbol.createWithImage(BitmapDrawable(image))
+        val node = PictureMarkerSymbol.createWithImage(BitmapDrawable(Resources.getSystem(), image))
         val graphic = Graphic(point, pointAttributes, node)
 
         graphicsOverlay.graphics.clear()

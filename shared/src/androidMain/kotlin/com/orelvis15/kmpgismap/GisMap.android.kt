@@ -1,16 +1,25 @@
-package com.orelvis.gismap
+package com.orelvis15.kmpgismap
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import com.arcgismaps.geometry.Point
 
-actual class GisMap {
+actual class GisMap actual constructor(
+    private var onMapLoadSuccess: () -> Unit,
+    private var onMapLoadFailed: (Throwable) -> Unit
+) {
 
     private lateinit var map: ComposeMapView
 
     @Composable
-    actual fun KMPMapView(mapConfig: GisMapConfig, onClick: (lat: Double, lon: Double) -> Unit){
-        map = ComposeMapView(LocalContext.current, mapConfig, onClick)
+    actual fun MapView(mapConfig: GisMapConfig, onClick: (lat: Double, lon: Double) -> Unit) {
+        map = ComposeMapView(
+            LocalContext.current,
+            mapConfig,
+            onMapLoadSuccess,
+            onMapLoadFailed,
+            onClick
+        )
         map.GetMap()
     }
 

@@ -6,9 +6,9 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.orelvis.gismap.GisMap
-import com.orelvis.gismap.GisMapConfig
-import com.orelvis.gismap.ViewPointConfig
+import com.orelvis15.kmpgismap.GisMap
+import com.orelvis15.kmpgismap.GisMapConfig
+import com.orelvis15.kmpgismap.ViewPointConfig
 import gislib.sample.composeapp.generated.resources.Res
 import kotlinx.coroutines.launch
 import org.jetbrains.compose.resources.ExperimentalResourceApi
@@ -20,8 +20,10 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 fun App() {
     MaterialTheme {
         val coroutine = rememberCoroutineScope()
+        var loading by remember { mutableStateOf("loading") }
         var text by remember { mutableStateOf("") }
         Column {
+            Text(modifier = Modifier.fillMaxWidth().height(50.dp), text = loading)
             Text(modifier = Modifier.fillMaxWidth().height(50.dp), text = text)
 
             val config = GisMapConfig(
@@ -34,8 +36,12 @@ fun App() {
                 )
             )
 
-            val map = GisMap()
-            map.KMPMapView(config) { lat, lon ->
+            val map = GisMap({
+                loading = "success"
+            }, {
+                loading = "failed"
+            })
+            map.MapView(config) { lat, lon ->
                 text = "$lat  -  $lon"
                 coroutine.launch {
                     val image = Res.readBytes("files/pin.png")

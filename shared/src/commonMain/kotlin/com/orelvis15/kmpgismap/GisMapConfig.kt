@@ -1,4 +1,4 @@
-package com.orelvis.gismap
+package com.orelvis15.kmpgismap
 
 class GisMapConfig(
     val apiKey: String,
