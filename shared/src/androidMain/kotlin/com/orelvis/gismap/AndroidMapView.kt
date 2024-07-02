@@ -1,5 +1,8 @@
 package com.orelvis.gismap
 
+import android.content.Context
+import android.graphics.BitmapFactory
+import android.graphics.drawable.BitmapDrawable
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
@@ -8,57 +11,55 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.lifecycle.LifecycleOwner
 import com.arcgismaps.ApiKey
 import com.arcgismaps.ArcGISEnvironment
 import com.arcgismaps.data.ServiceFeatureTable
+import com.arcgismaps.geometry.Point
 import com.arcgismaps.mapping.ArcGISMap
 import com.arcgismaps.mapping.BasemapStyle
 import com.arcgismaps.mapping.Viewpoint
 import com.arcgismaps.mapping.layers.FeatureLayer
+import com.arcgismaps.mapping.symbology.PictureMarkerSymbol
+import com.arcgismaps.mapping.view.Graphic
+import com.arcgismaps.mapping.view.GraphicsOverlay
 import com.arcgismaps.mapping.view.MapView
 import kotlinx.coroutines.launch
 
 class ComposeMapView(
-    val onClick: () -> Unit = {}
+    context: Context,
+    private val mapConfig: GisMapConfig,
+    val onClick: (lat: Double, lon: Double) -> Unit
 ) {
-    lateinit var mapView: MapView
-
-    val layerUrl = "https://ccpublicgis.cctexas.com/server01/rest/services/311_INCAP/311_INCAP/MapServer/29"
+    private var mapView: MapView = MapView(context)
 
     init {
-        ArcGISEnvironment.apiKey = ApiKey.create("AAPK92a52386e9dc4166b3756e68932f4328U0FKyQYYyXLBybTfzdEkF134pT6CQEHV4ghSaLYuxqBAIMGmzeQfY79neYAObhTF")
+        ArcGISEnvironment.apiKey = ApiKey.create(mapConfig.apiKey)
+        val map = ArcGISMap(BasemapStyle.ArcGISStreets)
+        map.operationalLayers.add(FeatureLayer.createWithFeatureTable(ServiceFeatureTable(mapConfig.layerUrl)))
+        mapView.map = map
     }
 
     @Composable
     fun GetMap() {
-        val map by remember { mutableStateOf(ArcGISMap(BasemapStyle.ArcGISStreets)) }
-        map.operationalLayers.add(FeatureLayer.createWithFeatureTable(ServiceFeatureTable(layerUrl)))
-
         val viewpoint by remember {
             mutableStateOf(
                 Viewpoint(
-                    27.796522238,
-                    -97.403100544,
-                    100000.0
+                    mapConfig.viewPoint.lat,
+                    mapConfig.viewPoint.lon,
+                    mapConfig.viewPoint.scale,
                 )
             )
         }
 
-        mapView = MapView(LocalContext.current)
-        mapView.map = map
-
         val lifecycleOwner = LocalLifecycleOwner.current
         val mapView = createMapViewInstance(lifecycleOwner, mapView)
 
-        // wrap the MapView as an AndroidView
         AndroidView(
             modifier = Modifier.fillMaxSize(),
             factory = { mapView },
-            // recomposes the MapView on changes in the MapViewState
             update = { _ ->
                 mapView.apply {
                     this.map = mapView.map
@@ -70,19 +71,45 @@ class ComposeMapView(
         LaunchedEffect(Unit) {
             launch {
                 mapView.onSingleTapConfirmed.collect {
-                    onClick()
+                    mapView.screenToLocation(it.screenCoordinate)
+                    onClick(it.mapPoint!!.y, it.mapPoint!!.x)
                 }
             }
         }
     }
+
+    fun drawPin(point: Point?, pin: ByteArray) {
+        var graphicsOverlay: GraphicsOverlay? = mapView.graphicsOverlays.find { it.id == "pin" }
+
+        if (graphicsOverlay == null) {
+            graphicsOverlay = GraphicsOverlay()
+            graphicsOverlay.scaleSymbols = true
+            graphicsOverlay.id = "pin"
+            mapView.graphicsOverlays.add(graphicsOverlay)
+        }
+
+        graphicsOverlay.scaleSymbols = true
+
+        val pointAttributes: MutableMap<String, Any> = HashMap()
+
+        val image = BitmapFactory.decodeByteArray(pin, 0, pin.size)
+
+        val node = PictureMarkerSymbol.createWithImage(BitmapDrawable(image))
+        val graphic = Graphic(point, pointAttributes, node)
+
+        graphicsOverlay.graphics.clear()
+        graphicsOverlay.graphics.add(graphic)
+    }
+
+    suspend fun centerMap(lat: Double, lon: Double, scale: Double? = null) {
+        val point = Point(x = lon, y = lat)
+        val currentScale = scale ?: mapView.mapScale.value
+        mapView.setViewpointCenter(point, currentScale)
+    }
 }
 
-/**
- * Create the MapView instance and add it to the Activity lifecycle
- */
 @Composable
 fun createMapViewInstance(lifecycleOwner: LifecycleOwner, mapView: MapView): MapView {
-    // add the side effects for MapView composition
     DisposableEffect(lifecycleOwner) {
         lifecycleOwner.lifecycle.addObserver(mapView)
         onDispose {
