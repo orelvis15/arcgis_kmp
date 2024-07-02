@@ -105,7 +105,9 @@ class IOSMapView(
     suspend fun centerMap(lat: Double, lon: Double, scale: Double? = null) {
         val point = AGSPoint.pointWithX(x = lon, y = lat, null)
         val currentScale = scale ?: mapView.mapScale
-        mapView.setViewpointCenter(point, currentScale) {}
+        val viewpoint = AGSViewpoint(center = point, scale = currentScale)
+        mapView.setViewpointCenter(center = point, scale = currentScale) {}
+        mapView.setViewpoint(viewpoint, duration = 0.5) { }
     }
 
     override fun geoView(

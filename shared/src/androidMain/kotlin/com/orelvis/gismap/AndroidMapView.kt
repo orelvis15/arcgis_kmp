@@ -104,7 +104,8 @@ class ComposeMapView(
     suspend fun centerMap(lat: Double, lon: Double, scale: Double? = null) {
         val point = Point(x = lon, y = lat)
         val currentScale = scale ?: mapView.mapScale.value
-        mapView.setViewpointCenter(point, currentScale)
+        val viewpoint = Viewpoint(point, currentScale)
+        mapView.setViewpointAnimated(viewpoint, durationSeconds = 0.5f)
     }
 }
 
