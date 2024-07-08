@@ -12,4 +12,4 @@ library_version=unspecified
 metadata_version=1.4.1
 native_targets=ios_arm64 ios_simulator_arm64 ios_x64
 package=cocoapods.ArcGIS
-unique_name=GISLIB\:shared-cinterop-ArcGIS
+unique_name=com.orelvis15\:shared-cinterop-ArcGIS

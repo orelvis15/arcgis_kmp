@@ -14,6 +14,7 @@ import cocoapods.ArcGIS.AGSBasemapStyleArcGISNavigation
 import cocoapods.ArcGIS.AGSFeatureLayer
 import cocoapods.ArcGIS.AGSGeoView
 import cocoapods.ArcGIS.AGSGeoViewTouchDelegateProtocol
+import cocoapods.ArcGIS.AGSGeometryEngine
 import cocoapods.ArcGIS.AGSGraphic
 import cocoapods.ArcGIS.AGSGraphicsOverlay
 import cocoapods.ArcGIS.AGSLoadStatus
@@ -28,6 +29,7 @@ import cocoapods.ArcGIS.AGSMapView
 import cocoapods.ArcGIS.AGSPictureMarkerSymbol
 import cocoapods.ArcGIS.AGSPoint
 import cocoapods.ArcGIS.AGSServiceFeatureTable
+import cocoapods.ArcGIS.AGSSpatialReference.Companion.WGS84
 import cocoapods.ArcGIS.AGSViewpoint
 import kotlinx.cinterop.CValue
 import kotlinx.cinterop.ExperimentalForeignApi
@@ -43,13 +45,14 @@ import platform.Foundation.NSURL
 import platform.Foundation.dataWithBytes
 import platform.UIKit.UIImage
 import platform.UIKit.UIViewController
+import platform.darwin.Point
 
 @OptIn(ExperimentalForeignApi::class)
 class IOSMapView(
     private val mapConfig: GisMapConfig,
     private val onMapLoadSuccess: () -> Unit = {},
     private val onMapLoadFailed: (Throwable) -> Unit = {},
-    val onClick: (lat: Double, lon: Double) -> Unit,
+    val onClick: (lat: Double, lon: Double, x: Double, y: Double) -> Unit,
     nibName: String? = null,
     bundle: NSBundle? = null
 ) : UIViewController(nibName, bundle), AGSGeoViewTouchDelegateProtocol {
@@ -150,7 +153,8 @@ class IOSMapView(
         didTapAtScreenPoint: CValue<CGPoint>,
         mapPoint: AGSPoint
     ) {
-        mapView.screenToLocation(didTapAtScreenPoint)
-        onClick(mapPoint.y, mapPoint.x)
+        val newMapPoint = mapView.screenToLocation(didTapAtScreenPoint)
+        val point = AGSGeometryEngine.projectGeometry(newMapPoint, WGS84()) as AGSPoint
+        onClick(point.y, point.x, newMapPoint.x, newMapPoint.y)
     }
 }

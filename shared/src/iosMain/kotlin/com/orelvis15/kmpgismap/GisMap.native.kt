@@ -16,7 +16,7 @@ actual class GisMap actual constructor(
     lateinit var map: IOSMapView
 
     @Composable
-    actual fun MapView(mapConfig: GisMapConfig, onClick: (lat: Double, lon: Double) -> Unit) {
+    actual fun MapView(mapConfig: GisMapConfig, onClick: (lat: Double, lon: Double, x: Double, y: Double) -> Unit) {
         map = IOSMapView(mapConfig, onMapLoadSuccess, onMapLoadFailed, onClick)
 
         Column(

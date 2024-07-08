@@ -12,7 +12,7 @@ actual class GisMap actual constructor(
     private lateinit var map: ComposeMapView
 
     @Composable
-    actual fun MapView(mapConfig: GisMapConfig, onClick: (lat: Double, lon: Double) -> Unit) {
+    actual fun MapView(mapConfig: GisMapConfig, onClick: (lat: Double, lon: Double, x: Double, y: Double) -> Unit) {
         map = ComposeMapView(
             LocalContext.current,
             mapConfig,

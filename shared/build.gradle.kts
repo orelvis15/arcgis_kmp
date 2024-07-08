@@ -7,13 +7,19 @@ plugins {
     alias(libs.plugins.kotlinCocoapods)
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.compose.compiler)
+    id("maven-publish")
+    id("signing")
 }
+
+group = "com.orelvis15"
+version = "1.0"
 
 kotlin {
     androidTarget {
         @OptIn(ExperimentalKotlinGradlePluginApi::class)
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_1_8)
+            publishLibraryVariants("release", "debug")
         }
     }
 
@@ -25,6 +31,7 @@ kotlin {
         it.binaries.framework {
             baseName = "shared"
             isStatic = true
+            export("ArcGIS-Runtime-SDK-iOS:ArcGIS:100.15.5")
         }
     }
 
@@ -35,7 +42,7 @@ kotlin {
             baseName = "shared"
             isStatic = true
         }
-        pod(name = "ArcGIS-Runtime-SDK-iOS", moduleName = "ArcGIS", linkOnly = false)
+        pod(name = "ArcGIS-Runtime-SDK-iOS", moduleName = "ArcGIS", linkOnly = false, version = "100.15.5")
     }
     
     sourceSets {
@@ -63,7 +70,7 @@ android {
     namespace = "com.orelvis15.gismap"
     compileSdk = 34
     defaultConfig {
-        minSdk = 24
+        minSdk = 26
     }
     sourceSets["main"].apply {
         manifest.srcFile("src/androidMain/AndroidManifest.xml")

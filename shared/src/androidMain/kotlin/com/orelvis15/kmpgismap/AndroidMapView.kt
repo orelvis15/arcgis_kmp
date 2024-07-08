@@ -18,7 +18,9 @@ import androidx.lifecycle.LifecycleOwner
 import com.arcgismaps.ApiKey
 import com.arcgismaps.ArcGISEnvironment
 import com.arcgismaps.data.ServiceFeatureTable
+import com.arcgismaps.geometry.GeometryEngine
 import com.arcgismaps.geometry.Point
+import com.arcgismaps.geometry.SpatialReference
 import com.arcgismaps.mapping.ArcGISMap
 import com.arcgismaps.mapping.BasemapStyle
 import com.arcgismaps.mapping.Viewpoint
@@ -27,14 +29,13 @@ import com.arcgismaps.mapping.symbology.PictureMarkerSymbol
 import com.arcgismaps.mapping.view.Graphic
 import com.arcgismaps.mapping.view.GraphicsOverlay
 import com.arcgismaps.mapping.view.MapView
-import kotlinx.coroutines.launch
 
 class ComposeMapView(
     context: Context,
     private val mapConfig: GisMapConfig,
     private val onMapLoadSuccess: () -> Unit = {},
     private val onMapLoadFailed: (Throwable) -> Unit = {},
-    val onClick: (lat: Double, lon: Double) -> Unit
+    val onClick: (lat: Double, lon: Double, x: Double, y: Double) -> Unit
 ) {
     private var mapView: MapView = MapView(context)
 
@@ -72,15 +73,17 @@ class ComposeMapView(
         )
 
         LaunchedEffect(Unit) {
-
             mapView.map?.load()?.fold(
                 onSuccess = { onMapLoadSuccess() },
                 onFailure = { onMapLoadFailed(Throwable()) }
             )
 
             mapView.onSingleTapConfirmed.collect {
-                mapView.screenToLocation(it.screenCoordinate)
-                onClick(it.mapPoint!!.y, it.mapPoint!!.x)
+                val mapPoint = mapView.screenToLocation(it.screenCoordinate)
+                if (mapPoint != null) {
+                    val point = GeometryEngine.projectOrNull(mapPoint, SpatialReference.wgs84())
+                    onClick(point?.y ?: 0.0, point?.x ?: 0.0, mapPoint.x, mapPoint.y)
+                }
             }
         }
     }

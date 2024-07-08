@@ -9,7 +9,7 @@ expect class GisMap(
     @Composable
     fun MapView(
         mapConfig: GisMapConfig,
-        onClick: (lat: Double, lon: Double) -> Unit
+        onClick: (lat: Double, lon: Double, x: Double, y: Double) -> Unit
     )
 
     fun drawPin(lat: Double, lon: Double, pin: ByteArray)
